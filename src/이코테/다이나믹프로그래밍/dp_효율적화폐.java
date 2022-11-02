@@ -42,9 +42,11 @@ public class dp_효율적화폐 {
             }
         }
 
-        for(int i=0;i<n;i++){
-            for(int j=arr[i];j<=m;j++){ //arr[i]부터 시작하는게 핵심이였음...!
-                dp[j]=Math.min(dp[j],dp[j-arr[i]]+1);
+        for(int i=1;i<=m;i++){
+            for(int j=0;j<n;j++){
+                if(arr[j]<=i){
+                    dp[i]=Math.min(dp[i],dp[i-arr[j]]+1);
+                }
             }
         }
 
@@ -63,4 +65,5 @@ public class dp_효율적화폐 {
 
 
     }
+
 }
