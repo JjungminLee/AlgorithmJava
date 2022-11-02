@@ -1,4 +1,4 @@
-package 이코테;
+package 이코테.그래프;
 
 import java.io.BufferedReader;
 import java.io.IOException;

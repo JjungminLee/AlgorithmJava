@@ -1,4 +1,4 @@
-package 이코테;
+package 이코테.구현;
 
 import java.io.BufferedReader;
 import java.io.IOException;
